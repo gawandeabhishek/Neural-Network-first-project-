@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="neuron.jpg" type="image/x-icon" />
+    <title>Neural Network - Project</title>
+  </head>
+  <body
+    id="root"
+    class="bg-sky-100 overflow-hidden flex items-center justify-center"
+  >
+    <canvas id="carCanvas" class="bg-slate-500"></canvas>
+    <div id="verticalButtons" class="flex flex-col">
+      <button
+        onclick="save()"
+        class="text-3xl rounded-lg bg-gray-300 hover:bg-green-400 p-4 m-2"
+      >
+        &#128190;
+      </button>
+      <button
+        onclick="discard()"
+        class="text-3xl rounded-lg bg-gray-300 hover:bg-rose-500 p-4 py-5 m-2"
+      >
+        &#128465;
+      </button>
+    </div>
+    <canvas id="networkCanvas" class="bg-slate-950"></canvas>
+    <script src="visualizer.js"></script>
+    <script src="network.js"></script>
+    <script src="sensor.js"></script>
+    <script src="utils.js"></script>
+    <script src="road.js"></script>
+    <script src="controls.js"></script>
+    <script src="car.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
